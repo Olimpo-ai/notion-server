@@ -13,10 +13,10 @@
   "bin":{
     "notion":"./build/index.js"
   },
-  "scripts": {
-    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+  "start": "npm run build && node build/index.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
